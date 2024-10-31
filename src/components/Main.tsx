@@ -108,6 +108,15 @@ const Main: React.FC = () => {
                 <img width="200" src="meme.png" alt="meme" />
               </a>
             </p>
+            <p>
+              <a
+                href="https://t.me/bettearbot?start=ref-1583327155"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img width="200" src="bot.png" alt="meme" />
+              </a>
+            </p>
           </div>
 
           <h1>LINKS</h1>
