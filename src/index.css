@@ -4,10 +4,11 @@
 
 body {
   margin: 0;
-  font-family: 'Mona Sans', sans-serif;
+  font-family: "Mona Sans", sans-serif;
+  width: 100%;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
