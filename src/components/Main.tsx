@@ -27,14 +27,14 @@ const Main: React.FC = () => {
         </div>
       </section>
       <section className="green">
-        <div className="container">
+        <div className="container flex flex-col">
           <h1>There's a better way to meme.</h1>
           <div className="content">
             <div>
               <img src="symbol.png" width="250" alt="Symbol" />
             </div>
             <div style={{ padding: "20px" }}>
-              <p>
+              <p className="break-words">
                 <span>$NOEAR</span> is an organic movement inside NEAR
                 Blockchain. <br />
                 Is community driven memes, that satirize with the protocol name,
@@ -54,7 +54,7 @@ const Main: React.FC = () => {
         </div>
       </section>
       <section className="black">
-        <div className="container">
+        <div className="container w-full flex flex-col">
           <h1>100% community driven.</h1>
           <div className="content">
             <div style={{ padding: "20px" }}>
@@ -74,7 +74,7 @@ const Main: React.FC = () => {
         </div>
       </section>
       <section className="end">
-        <div className="container">
+        <div className="container w-full flex flex-col">
           <h1>tokenomics</h1>
           <div className="content">
             <div style={{ padding: "20px" }}>

@@ -37,7 +37,6 @@
   }
 }
 
-
 :root {
   --shadow-card: 0px 0px 0px 1px rgba(0, 0, 0, 0.06),
     0px 4px 8px 0px rgba(0, 0, 0, 0.06);
@@ -193,6 +192,11 @@
   }
 }
 
+.flex-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensure flex items wrap on smaller screens */
+}
+
 .Pattern-module_pattern__Ngp7v {
   min-height: 540px;
   display: flex;
@@ -256,12 +260,12 @@ header {
 
 .header-wrapper nav ul {
   display: flex;
-  margin-top: 0
+  margin-top: 0;
 }
 
 header a {
   color: #000;
-  font-family: 'Mona Sans';
+  font-family: "Mona Sans";
   font-weight: 600;
   text-decoration: none;
   padding-top: 5px;
@@ -332,47 +336,205 @@ body {
   padding-bottom: 140px;
 }
 
-.black p{
-  color:#fff
+.black p {
+  color: #fff;
 }
 
-.black h1, .end h1{
+.black h1,
+.end h1 {
   font: var(--text-hero-l);
   letter-spacing: -3px;
-  margin-top:0px;
+  margin-top: 0px;
   padding-top: 140px;
 }
 
-.end{
+.end {
   min-height: 400px;
   padding-bottom: 140px;
 }
 
-.end h1{
-  margin-bottom:30px;
-  font-size:40px;
+.end h1 {
+  margin-bottom: 30px;
+  font-size: 40px;
 }
 
-.end p{
+.end p {
   font-size: 30px;
 }
-.flex{
+.flex {
   display: flex;
 }
 
-.center
-{
+.center {
   justify-content: center;
   align-items: center;
 }
 
 .links p {
-  margin-right:20px;
+  margin-right: 20px;
 }
 
-.links img, .buy img{
+.links img,
+.buy img {
   transition: transform 0.3s ease;
 }
-.links img:hover, .buy img:hover {
- transform:scale(1.1)
+.links img:hover,
+.buy img:hover {
+  transform: scale(1.1);
+}
+
+/* Adjustments for mobile responsiveness */
+@media (max-width: 768px) {
+  /* Header adjustments */
+  .header-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .header-wrapper img {
+    max-width: 100px; /* Adjust logo size */
+    margin-bottom: 10px;
+  }
+
+  .header-wrapper nav ul {
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+  }
+
+  .header-wrapper nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  /* Main content adjustments */
+  .Pattern-module_pattern__Ngp7v,
+  .container,
+  .green .container,
+  .black .container,
+  .end .container {
+    max-width: 100%; /* Use full width */
+    padding: 0 20px; /* Add padding */
+  }
+
+  .motto,
+  .content,
+  .buy,
+  .links {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .motto h1,
+  .green h1,
+  .black h1,
+  .end h1 {
+    font-size: 28px; /* Adjust font size for headings */
+  }
+
+  .content div,
+  .buy p,
+  .links p {
+    padding: 10px 0; /* Add padding between items */
+  }
+
+  .content img,
+  .buy img,
+  .links img {
+    width: 100%; /* Full width images */
+    max-width: 200px; /* Limit maximum size */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Adjust font sizes for text */
+  .motto p,
+  .content p,
+  .end p {
+    font-size: 16px;
+  }
+
+  /* Adjustments for specific sections */
+  .green,
+  .black,
+  .end {
+    padding-bottom: 60px;
+  }
+
+  .green h1,
+  .black h1 {
+    padding-top: 60px;
+  }
+
+  /* Adjust the size of the navigation links */
+  header a {
+    font-size: 14px; /* Smaller font size for links */
+  }
+}
+
+/* HEADER STYLES  */
+
+/* Hamburger Icon Styling */
+.hamburger-icon {
+  display: none; /* Hide by default */
+  cursor: pointer;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 1100; /* Above the menu */
+}
+
+/* Full-page Menu Styling */
+.menu {
+  display: none; /* Hide the menu by default */
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  z-index: 1000; /* Ensure it's above other content */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-left: 0;
+}
+
+.menu.open {
+  display: flex; /* Show the menu when 'open' class is added */
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Reset default margin */
+  width: 100%; /* Full width to center content */
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+}
+
+.menu ul li {
+  /* Add some vertical padding for each list item */
+  width: 100%;
+}
+
+.menu ul li a {
+  color: white;
+  font-size: 24px;
+  text-decoration: none;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+  .hamburger-icon {
+    display: block; /* Show the hamburger icon on small screens */
+  }
+
+  .header-wrapper > nav {
+    display: none; /* Hide the default nav menu on small screens */
+  }
 }
