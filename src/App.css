@@ -426,13 +426,6 @@ body {
     text-align: center;
   }
 
-  .motto h1,
-  .green h1,
-  .black h1,
-  .end h1 {
-    font-size: 28px; /* Adjust font size for headings */
-  }
-
   .content div,
   .buy p,
   .links p {
