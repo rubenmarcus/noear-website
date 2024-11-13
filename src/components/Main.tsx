@@ -14,7 +14,7 @@ const Main: React.FC = () => {
               data-stack="true"
             >
               <h1 className="Text-module_text__6S3Wr" data-size="text-hero-l">
-                Ears, Abstracted.
+                Near for Degens.
               </h1>
               <p>
                 NOEAR is the ear abstraction stack, empowering builders to
@@ -27,6 +27,27 @@ const Main: React.FC = () => {
         </div>
       </section>
       <section className="green">
+        <div className="container flex flex-col">
+          <h1 className="pb-10">Our projects</h1>
+          <div className="">
+
+            <div className=" pt-2 wrap">
+          <div className="w-full md:flex mb-2">
+          <img src="https://snake-game.noear.xyz/thumbnail.png" width="300" className="md:hidden" />
+            <h2 className="w-full pb-10 md:pt-20 md:w-3/4 block"><a href="https://snake-game.noear.xyz">Snake Game</a></h2>
+            <img src="https://snake-game.noear.xyz/thumbnail.png" width="300"  className="hidden md:block" />
+          </div>
+
+          <div className="w-full md:flex ">
+            <img src="https://noear-meme-editor.vercel.app/thumb.png" width="300" />
+            <h2 className="w-full pb-10 md:pt-20 md:w-3/4 block"><a href="https://meme-maker.noear.xyz"> Meme Maker</a></h2>
+          </div>
+          <h2 className="md:pt-20" >+ soon</h2>
+            </div>
+</div>
+        </div>
+      </section>
+      {/* <section >
         <div className="container flex flex-col">
           <h1>There's a better way to meme.</h1>
           <div className="content">
@@ -52,7 +73,7 @@ const Main: React.FC = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <section className="black">
         <div className="container w-full flex flex-col">
           <h1>100% community driven.</h1>
@@ -66,10 +87,13 @@ const Main: React.FC = () => {
                 hodl $NOEAR
               </p>
               <p>We are here to make $NOEAR and $NEAR be heard by everyone</p>
+              <h2>read our <a href="https://noear-protocol.gitbook.io/noear-protocol">whitepaper</a></h2>
             </div>
             <div>
               <img src="illia.gif" width="250" alt="Illia" />
             </div>
+
+
           </div>
         </div>
       </section>

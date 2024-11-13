@@ -284,12 +284,21 @@ header a:hover {
   list-style-type: none;
 }
 
+.grey {
+  --section-background-color: var(--grey-brand);
+  width: 100%;
+  height: auto;
+  background: var(--section-background-color);
+  margin-top: 40px;
+  padding-bottom: 140px;
+}
+
 .green {
   --section-background-color: var(--green-brand);
   width: 100%;
   height: auto;
   background: var(--section-background-color);
-  margin-top: 40px;
+  margin-top: 10px;
   padding-bottom: 140px;
 }
 
@@ -299,8 +308,21 @@ header a:hover {
   color: var(--sand12);
   font-weight: 400;
   margin-top: 10px;
-  padding-top: 140px;
+  padding-top: 80px;
 }
+
+.green h2 {
+  font: var(--text-hero-l);
+  letter-spacing: -3px;
+  font-size:40px !important;
+  color: var(--sand12);
+  font-weight: 400;
+  margin-top: 10px;
+  padding-left:20px;
+}
+
+
+
 
 .container {
   width: 1000px !important;
@@ -338,6 +360,11 @@ body {
 
 .black p {
   color: #fff;
+}
+
+.black h2{
+  font-size:30px;
+  padding-top:10px;
 }
 
 .black h1,

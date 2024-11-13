@@ -54,6 +54,26 @@ const Header: React.FC = () => {
                 </li>
                 <li>
                   <a
+                    href="https://meme-maker.noear.xyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={toggleMenu}
+                  >
+                    MEME MAKER
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://snake-game.noear.xyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={toggleMenu}
+                  >
+                    SNAKE GAME
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="https://t.me/noeartoken"
                     target="_blank"
                     rel="noopener noreferrer"
@@ -72,16 +92,7 @@ const Header: React.FC = () => {
                     TWITTER
                   </a>
                 </li>
-                <li>
-                  <a
-                    href="https://github.com/noearprotocol"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    onClick={toggleMenu}
-                  >
-                    GITHUB
-                  </a>
-                </li>
+
               </ul>
             </nav>{" "}
           </>
@@ -91,6 +102,26 @@ const Header: React.FC = () => {
               <li>
                 <a href="#buy">BUY</a>
               </li>
+              <li>
+                  <a
+                    href="https://meme-maker.noear.xyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={toggleMenu}
+                  >
+                    MEME MAKER
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://snake-game.noear.xyz"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    onClick={toggleMenu}
+                  >
+                    SNAKE GAME
+                  </a>
+                </li>
               <li>
                 <a
                   href="https://t.me/noearmemes"
@@ -118,15 +149,7 @@ const Header: React.FC = () => {
                   TWITTER
                 </a>
               </li>
-              <li>
-                <a
-                  href="https://github.com/noearprotocol"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GITHUB
-                </a>
-              </li>
+
             </ul>
           </nav>
         )}
