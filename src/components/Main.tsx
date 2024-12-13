@@ -30,21 +30,48 @@ const Main: React.FC = () => {
         <div className="container flex flex-col">
           <h1 className="pb-10">Our projects</h1>
           <div className="">
+            <div className=" w-full wrap md:flex md:gap-2 pt-2 ">
+              <div className="w-full md:w-1/4   ">
+                <a href="https://airdrop.noear.xyz">
+                  <img src="/airdrop.png" width="300" className="" />
 
-            <div className=" pt-2 wrap">
-          <div className="w-full md:flex mb-2">
-          <img src="https://snake-game.noear.xyz/thumbnail.png" width="300" className="md:hidden" />
-            <h2 className="w-full pb-10 md:pt-20 md:w-3/4 block"><a href="https://snake-game.noear.xyz">Snake Game</a></h2>
-            <img src="https://snake-game.noear.xyz/thumbnail.png" width="300"  className="hidden md:block" />
-          </div>
+                  <p className="w-full text-3xl pb-10 pt-4 font-black	 md:w-3/4 block">
+                    Airdrop tool
+                  </p>
+                </a>
+              </div>
 
-          <div className="w-full md:flex ">
-            <img src="https://noear-meme-editor.vercel.app/thumb.png" width="300" />
-            <h2 className="w-full pb-10 md:pt-20 md:w-3/4 block"><a href="https://meme-maker.noear.xyz"> Meme Maker</a></h2>
-          </div>
-          <h2 className="md:pt-20" >+ soon</h2>
+              <div className="w-full md:w-1/4   ">
+                <a href="https://burn.noear.xyz">
+                  <img src="/burn.png" width="300" />
+
+                  <p className="w-full text-3xl pb-10 pt-4 font-black	 md:w-3/4 block">
+                    Burn tool
+                  </p>
+                </a>
+              </div>
+              <div className="w-full md:w-1/4   ">
+                <a href="https://meme-maker.noear.xyz">
+                  <img
+                    src="https://noear-meme-editor.vercel.app/thumb.png"
+                    width="300"
+                  />
+
+                  <p className="w-full text-3xl pb-10 pt-4 font-black	 md:w-3/4 block">
+                    Meme Maker
+                  </p>
+                </a>
+              </div>
+              <div className="w-full md:w-1/4   ">
+                <a href="https://snake-game.noear.xyz">
+                  <img src="snakegame.png" width="300" className="" />
+                  <p className="w-full text-3xl pb-10 pt-4 font-black	 md:w-3/4 block">
+                    Snake Game
+                  </p>
+                </a>
+              </div>
             </div>
-</div>
+          </div>
         </div>
       </section>
       {/* <section >
@@ -87,13 +114,16 @@ const Main: React.FC = () => {
                 hodl $NOEAR
               </p>
               <p>We are here to make $NOEAR and $NEAR be heard by everyone</p>
-              <h2>read our <a href="https://noear-protocol.gitbook.io/noear-protocol">whitepaper</a></h2>
+              <h2>
+                read our{" "}
+                <a href="https://noear-protocol.gitbook.io/noear-protocol">
+                  whitepaper
+                </a>
+              </h2>
             </div>
             <div>
               <img src="illia.gif" width="250" alt="Illia" />
             </div>
-
-
           </div>
         </div>
       </section>
